@@ -1,0 +1,33 @@
+noanimal;espece;nom;secteur;datenaissance;regime;statut;description
+1;Girafe;Zara;SAV;2019-04-12;herbivore;visible;Femelle de quatre mètres, reconnaissable à sa tache en forme de cœur sur l'épaule gauche.
+2;Girafe;Nino;SAV;2024-11-03;herbivore;visible;Jeune mâle né au parc, encore proche de sa mère Zara.
+3;Zèbre de Grévy;Pablo;SAV;2017-06-21;herbivore;visible;Le plus âgé du groupe, meneur du troupeau.
+4;Zèbre de Grévy;Iris;SAV;2021-03-09;herbivore;visible;Curieuse, s'approche souvent de la vitre d'observation.
+5;Autruche;Gaston;SAV;2018-09-30;omnivore;visible;Deux mètres cinquante, court à soixante-dix kilomètres à l'heure dans l'enclos.
+6;Rhinocéros blanc;Tembo;SAV;2012-01-15;herbivore;soins;En soins pour une blessure au pied, visible depuis la passerelle nord seulement.
+7;Suricate;Groupe Kalahari;SAV;2022-05-05;insectivore;visible;Colonie de douze individus, toujours une sentinelle debout.
+8;Capucin;Tico;TRO;2016-08-19;omnivore;visible;Chef de groupe, ouvre les noix avec une pierre.
+9;Capucin;Lua;TRO;2025-12-20;omnivore;visible;Bébé de l'hiver dernier, encore porté par sa mère.
+10;Paresseux;Domingo;TRO;2015-02-28;herbivore;visible;Dort dix-huit heures par jour dans le même arbre depuis dix ans.
+11;Toucan toco;Carmen;TRO;2020-07-07;frugivore;visible;Bec orange de vingt centimètres, mange des papayes en vol.
+12;Iguane vert;Verdi;TRO;2019-10-10;herbivore;visible;Un mètre soixante, immobile sur sa branche chauffée.
+13;Anaconda;Sissi;TRO;2014-04-01;carnivore;visible;Quatre mètres, nourrie une fois par mois, souvent dans l'eau.
+14;Ara bleu;Rio;TRO;2018-03-03;frugivore;soins;Perte de plumes en cours de traitement, en volière de repos.
+15;Manchot de Humboldt;Pingu;BAN;2020-11-11;piscivore;visible;Plonge à chaque nourrissage de onze heures.
+16;Manchot de Humboldt;Flocon;BAN;2026-01-18;piscivore;visible;Né cet hiver, premier manchot éclos au parc.
+17;Manchot de Humboldt;Olga;BAN;2019-12-24;piscivore;visible;Mère de Flocon, très territoriale sur son nid.
+18;Phoque gris;Bruno;BAN;2013-05-14;piscivore;visible;Deux cents kilos, adore le tunnel de verre.
+19;Phoque gris;Maya;BAN;2023-06-30;piscivore;visible;Jeune femelle joueuse, nourrie à la main lors des animations.
+20;Chèvre naine;Biscotte;FER;2021-02-14;herbivore;visible;Grimpe sur tout ce qui dépasse, mascotte des scolaires.
+21;Chèvre naine;Caramel;FER;2026-03-02;herbivore;visible;Chevreau du printemps, tête toute noire.
+22;Âne du Poitou;Ulysse;FER;2011-08-08;herbivore;visible;Longs poils bruns emmêlés, promène les enfants le mercredi.
+23;Poule de Marans;Groupe basse-cour;FER;2024-04-04;omnivore;visible;Huit poules aux œufs chocolat, ramassés à quatorze heures.
+24;Lapin bélier;Moka;FER;2023-09-09;herbivore;visible;Oreilles tombantes, atelier caresses le samedi.
+25;Vautour fauve;Attila;VOL;2010-06-06;charognard;visible;Deux mètres soixante d'envergure, nourri à quinze heures.
+26;Perroquet gris du Gabon;Coco;VOL;2017-01-30;frugivore;visible;Imite la sonnerie du téléphone de l'accueil.
+27;Chouette effraie;Luna;VOL;2022-10-31;carnivore;visible;Visible surtout à la tombée du jour, vol totalement silencieux.
+28;Flamant rose;Groupe lagune;VOL;2015-05-05;omnivore;visible;Vingt-deux flamants, couleur due aux crevettes de leur alimentation.
+29;Raie pastenague;Vega;AQU;2018-02-02;carnivore;visible;Passe au-dessus du tunnel toutes les dix minutes.
+30;Hippocampe;Groupe récif;AQU;2025-08-15;carnivore;visible;Vingt individus, les mâles portent les œufs.
+31;Poisson-clown;Groupe anémones;AQU;2024-06-01;omnivore;visible;Trente poissons dans leurs anémones, bassin numéro 4.
+32;Piranha rouge;Groupe Amazone;AQU;2021-07-21;carnivore;soins;Bassin en nettoyage, poissons transférés en réserve jusqu'à la fin du mois.

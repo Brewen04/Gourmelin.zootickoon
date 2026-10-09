@@ -1,0 +1,326 @@
+{
+  "parc": "Parc animalier de Val-Sorin",
+  "mis_a_jour": "2026-09-05",
+  "animaux": [
+    {
+      "noanimal": 1,
+      "espece": "Girafe",
+      "nom": "Zara",
+      "secteur": "SAV",
+      "datenaissance": "2019-04-12",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Femelle de quatre mètres, reconnaissable à sa tache en forme de cœur sur l'épaule gauche."
+    },
+    {
+      "noanimal": 2,
+      "espece": "Girafe",
+      "nom": "Nino",
+      "secteur": "SAV",
+      "datenaissance": "2024-11-03",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Jeune mâle né au parc, encore proche de sa mère Zara."
+    },
+    {
+      "noanimal": 3,
+      "espece": "Zèbre de Grévy",
+      "nom": "Pablo",
+      "secteur": "SAV",
+      "datenaissance": "2017-06-21",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Le plus âgé du groupe, meneur du troupeau."
+    },
+    {
+      "noanimal": 4,
+      "espece": "Zèbre de Grévy",
+      "nom": "Iris",
+      "secteur": "SAV",
+      "datenaissance": "2021-03-09",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Curieuse, s'approche souvent de la vitre d'observation."
+    },
+    {
+      "noanimal": 5,
+      "espece": "Autruche",
+      "nom": "Gaston",
+      "secteur": "SAV",
+      "datenaissance": "2018-09-30",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Deux mètres cinquante, court à soixante-dix kilomètres à l'heure dans l'enclos."
+    },
+    {
+      "noanimal": 6,
+      "espece": "Rhinocéros blanc",
+      "nom": "Tembo",
+      "secteur": "SAV",
+      "datenaissance": "2012-01-15",
+      "regime": "herbivore",
+      "statut": "soins",
+      "description": "En soins pour une blessure au pied, visible depuis la passerelle nord seulement."
+    },
+    {
+      "noanimal": 7,
+      "espece": "Suricate",
+      "nom": "Groupe Kalahari",
+      "secteur": "SAV",
+      "datenaissance": "2022-05-05",
+      "regime": "insectivore",
+      "statut": "visible",
+      "description": "Colonie de douze individus, toujours une sentinelle debout."
+    },
+    {
+      "noanimal": 8,
+      "espece": "Capucin",
+      "nom": "Tico",
+      "secteur": "TRO",
+      "datenaissance": "2016-08-19",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Chef de groupe, ouvre les noix avec une pierre."
+    },
+    {
+      "noanimal": 9,
+      "espece": "Capucin",
+      "nom": "Lua",
+      "secteur": "TRO",
+      "datenaissance": "2025-12-20",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Bébé de l'hiver dernier, encore porté par sa mère."
+    },
+    {
+      "noanimal": 10,
+      "espece": "Paresseux",
+      "nom": "Domingo",
+      "secteur": "TRO",
+      "datenaissance": "2015-02-28",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Dort dix-huit heures par jour dans le même arbre depuis dix ans."
+    },
+    {
+      "noanimal": 11,
+      "espece": "Toucan toco",
+      "nom": "Carmen",
+      "secteur": "TRO",
+      "datenaissance": "2020-07-07",
+      "regime": "frugivore",
+      "statut": "visible",
+      "description": "Bec orange de vingt centimètres, mange des papayes en vol."
+    },
+    {
+      "noanimal": 12,
+      "espece": "Iguane vert",
+      "nom": "Verdi",
+      "secteur": "TRO",
+      "datenaissance": "2019-10-10",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Un mètre soixante, immobile sur sa branche chauffée."
+    },
+    {
+      "noanimal": 13,
+      "espece": "Anaconda",
+      "nom": "Sissi",
+      "secteur": "TRO",
+      "datenaissance": "2014-04-01",
+      "regime": "carnivore",
+      "statut": "visible",
+      "description": "Quatre mètres, nourrie une fois par mois, souvent dans l'eau."
+    },
+    {
+      "noanimal": 14,
+      "espece": "Ara bleu",
+      "nom": "Rio",
+      "secteur": "TRO",
+      "datenaissance": "2018-03-03",
+      "regime": "frugivore",
+      "statut": "soins",
+      "description": "Perte de plumes en cours de traitement, en volière de repos."
+    },
+    {
+      "noanimal": 15,
+      "espece": "Manchot de Humboldt",
+      "nom": "Pingu",
+      "secteur": "BAN",
+      "datenaissance": "2020-11-11",
+      "regime": "piscivore",
+      "statut": "visible",
+      "description": "Plonge à chaque nourrissage de onze heures."
+    },
+    {
+      "noanimal": 16,
+      "espece": "Manchot de Humboldt",
+      "nom": "Flocon",
+      "secteur": "BAN",
+      "datenaissance": "2026-01-18",
+      "regime": "piscivore",
+      "statut": "visible",
+      "description": "Né cet hiver, premier manchot éclos au parc."
+    },
+    {
+      "noanimal": 17,
+      "espece": "Manchot de Humboldt",
+      "nom": "Olga",
+      "secteur": "BAN",
+      "datenaissance": "2019-12-24",
+      "regime": "piscivore",
+      "statut": "visible",
+      "description": "Mère de Flocon, très territoriale sur son nid."
+    },
+    {
+      "noanimal": 18,
+      "espece": "Phoque gris",
+      "nom": "Bruno",
+      "secteur": "BAN",
+      "datenaissance": "2013-05-14",
+      "regime": "piscivore",
+      "statut": "visible",
+      "description": "Deux cents kilos, adore le tunnel de verre."
+    },
+    {
+      "noanimal": 19,
+      "espece": "Phoque gris",
+      "nom": "Maya",
+      "secteur": "BAN",
+      "datenaissance": "2023-06-30",
+      "regime": "piscivore",
+      "statut": "visible",
+      "description": "Jeune femelle joueuse, nourrie à la main lors des animations."
+    },
+    {
+      "noanimal": 20,
+      "espece": "Chèvre naine",
+      "nom": "Biscotte",
+      "secteur": "FER",
+      "datenaissance": "2021-02-14",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Grimpe sur tout ce qui dépasse, mascotte des scolaires."
+    },
+    {
+      "noanimal": 21,
+      "espece": "Chèvre naine",
+      "nom": "Caramel",
+      "secteur": "FER",
+      "datenaissance": "2026-03-02",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Chevreau du printemps, tête toute noire."
+    },
+    {
+      "noanimal": 22,
+      "espece": "Âne du Poitou",
+      "nom": "Ulysse",
+      "secteur": "FER",
+      "datenaissance": "2011-08-08",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Longs poils bruns emmêlés, promène les enfants le mercredi."
+    },
+    {
+      "noanimal": 23,
+      "espece": "Poule de Marans",
+      "nom": "Groupe basse-cour",
+      "secteur": "FER",
+      "datenaissance": "2024-04-04",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Huit poules aux œufs chocolat, ramassés à quatorze heures."
+    },
+    {
+      "noanimal": 24,
+      "espece": "Lapin bélier",
+      "nom": "Moka",
+      "secteur": "FER",
+      "datenaissance": "2023-09-09",
+      "regime": "herbivore",
+      "statut": "visible",
+      "description": "Oreilles tombantes, atelier caresses le samedi."
+    },
+    {
+      "noanimal": 25,
+      "espece": "Vautour fauve",
+      "nom": "Attila",
+      "secteur": "VOL",
+      "datenaissance": "2010-06-06",
+      "regime": "charognard",
+      "statut": "visible",
+      "description": "Deux mètres soixante d'envergure, nourri à quinze heures."
+    },
+    {
+      "noanimal": 26,
+      "espece": "Perroquet gris du Gabon",
+      "nom": "Coco",
+      "secteur": "VOL",
+      "datenaissance": "2017-01-30",
+      "regime": "frugivore",
+      "statut": "visible",
+      "description": "Imite la sonnerie du téléphone de l'accueil."
+    },
+    {
+      "noanimal": 27,
+      "espece": "Chouette effraie",
+      "nom": "Luna",
+      "secteur": "VOL",
+      "datenaissance": "2022-10-31",
+      "regime": "carnivore",
+      "statut": "visible",
+      "description": "Visible surtout à la tombée du jour, vol totalement silencieux."
+    },
+    {
+      "noanimal": 28,
+      "espece": "Flamant rose",
+      "nom": "Groupe lagune",
+      "secteur": "VOL",
+      "datenaissance": "2015-05-05",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Vingt-deux flamants, couleur due aux crevettes de leur alimentation."
+    },
+    {
+      "noanimal": 29,
+      "espece": "Raie pastenague",
+      "nom": "Vega",
+      "secteur": "AQU",
+      "datenaissance": "2018-02-02",
+      "regime": "carnivore",
+      "statut": "visible",
+      "description": "Passe au-dessus du tunnel toutes les dix minutes."
+    },
+    {
+      "noanimal": 30,
+      "espece": "Hippocampe",
+      "nom": "Groupe récif",
+      "secteur": "AQU",
+      "datenaissance": "2025-08-15",
+      "regime": "carnivore",
+      "statut": "visible",
+      "description": "Vingt individus, les mâles portent les œufs."
+    },
+    {
+      "noanimal": 31,
+      "espece": "Poisson-clown",
+      "nom": "Groupe anémones",
+      "secteur": "AQU",
+      "datenaissance": "2024-06-01",
+      "regime": "omnivore",
+      "statut": "visible",
+      "description": "Trente poissons dans leurs anémones, bassin numéro 4."
+    },
+    {
+      "noanimal": 32,
+      "espece": "Piranha rouge",
+      "nom": "Groupe Amazone",
+      "secteur": "AQU",
+      "datenaissance": "2021-07-21",
+      "regime": "carnivore",
+      "statut": "soins",
+      "description": "Bassin en nettoyage, poissons transférés en réserve jusqu'à la fin du mois."
+    }
+  ]
+}

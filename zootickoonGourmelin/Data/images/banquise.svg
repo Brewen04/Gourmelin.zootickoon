@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#4a90c2"/>
+  <circle cx="200" cy="110" r="52" fill="#ffffff" fill-opacity="0.55"/>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Banquise</text>
+</svg>

@@ -1,0 +1,11 @@
+<!-- animaux.dtd - definition du document animaux.xml -->
+<!ELEMENT parc (nom, secteur+)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT secteur (nom, description, animal*)>
+<!ATTLIST secteur code ID #REQUIRED surface CDATA #IMPLIED>
+<!ELEMENT animal (espece, nom, naissance, regime, description)>
+<!ATTLIST animal id CDATA #REQUIRED statut (visible|soins) "visible">
+<!ELEMENT espece (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT naissance (#PCDATA)>
+<!ELEMENT regime (#PCDATA)>

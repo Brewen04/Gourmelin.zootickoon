@@ -1,0 +1,108 @@
+-- ZooTickoon - kit zootickoon-data - 02_seed.sql
+-- 6 secteurs, 32 animaux, 10 agents, 44 tickets. Aucune donnee reelle.
+-- Import : mysql -u root -p zootickoon < 02_seed.sql
+-- Mot de passe des agents et techniciens : Zoo2026!   Administrateur : Admin2026!   (haches par password_hash)
+-- Date de reference du jeu : 2026-09-05
+
+USE zootickoon;
+SET NAMES utf8mb4;
+
+INSERT INTO secteur (code, nom, description, surface_m2, capacite_animaux, image) VALUES
+  ('SAV', 'Savane', 'Grande plaine herbeuse de trois hectares, girafes, zèbres et autruches en cohabitation.', 30000, 34, 'savane.svg'),
+  ('TRO', 'Forêt tropicale', 'Serre chaude et humide, canopée artificielle, singes, paresseux et oiseaux colorés.', 4200, 27, 'tropicale.svg'),
+  ('BAN', 'Banquise', 'Bassin réfrigéré avec plage de glace, manchots et phoques.', 1800, 22, 'banquise.svg'),
+  ('FER', 'Ferme pédagogique', 'Enclos ouverts au contact, chèvres, ânes et poules, ateliers pour les scolaires.', 2500, 40, 'ferme.svg'),
+  ('VOL', 'Grande volière', 'Volière de vingt mètres de haut traversée par une passerelle, rapaces et perroquets.', 1500, 45, 'voliere.svg'),
+  ('AQU', 'Aquarium', 'Douze bassins d\'eau douce et d\'eau de mer, tunnel sous le bassin des raies.', 900, 300, 'aquarium.svg');
+
+INSERT INTO animal (noanimal, espece, nom, secteur, datenaissance, regime, statut, description, image) VALUES
+  (1, 'Girafe', 'Zara', 'SAV', '2019-04-12', 'herbivore', 'visible', 'Femelle de quatre mètres, reconnaissable à sa tache en forme de cœur sur l\'épaule gauche.', 'animal.svg'),
+  (2, 'Girafe', 'Nino', 'SAV', '2024-11-03', 'herbivore', 'visible', 'Jeune mâle né au parc, encore proche de sa mère Zara.', 'animal.svg'),
+  (3, 'Zèbre de Grévy', 'Pablo', 'SAV', '2017-06-21', 'herbivore', 'visible', 'Le plus âgé du groupe, meneur du troupeau.', 'animal.svg'),
+  (4, 'Zèbre de Grévy', 'Iris', 'SAV', '2021-03-09', 'herbivore', 'visible', 'Curieuse, s\'approche souvent de la vitre d\'observation.', 'animal.svg'),
+  (5, 'Autruche', 'Gaston', 'SAV', '2018-09-30', 'omnivore', 'visible', 'Deux mètres cinquante, court à soixante-dix kilomètres à l\'heure dans l\'enclos.', 'animal.svg'),
+  (6, 'Rhinocéros blanc', 'Tembo', 'SAV', '2012-01-15', 'herbivore', 'soins', 'En soins pour une blessure au pied, visible depuis la passerelle nord seulement.', 'animal.svg'),
+  (7, 'Suricate', 'Groupe Kalahari', 'SAV', '2022-05-05', 'insectivore', 'visible', 'Colonie de douze individus, toujours une sentinelle debout.', 'animal.svg'),
+  (8, 'Capucin', 'Tico', 'TRO', '2016-08-19', 'omnivore', 'visible', 'Chef de groupe, ouvre les noix avec une pierre.', 'animal.svg'),
+  (9, 'Capucin', 'Lua', 'TRO', '2025-12-20', 'omnivore', 'visible', 'Bébé de l\'hiver dernier, encore porté par sa mère.', 'animal.svg'),
+  (10, 'Paresseux', 'Domingo', 'TRO', '2015-02-28', 'herbivore', 'visible', 'Dort dix-huit heures par jour dans le même arbre depuis dix ans.', 'animal.svg'),
+  (11, 'Toucan toco', 'Carmen', 'TRO', '2020-07-07', 'frugivore', 'visible', 'Bec orange de vingt centimètres, mange des papayes en vol.', 'animal.svg'),
+  (12, 'Iguane vert', 'Verdi', 'TRO', '2019-10-10', 'herbivore', 'visible', 'Un mètre soixante, immobile sur sa branche chauffée.', 'animal.svg'),
+  (13, 'Anaconda', 'Sissi', 'TRO', '2014-04-01', 'carnivore', 'visible', 'Quatre mètres, nourrie une fois par mois, souvent dans l\'eau.', 'animal.svg'),
+  (14, 'Ara bleu', 'Rio', 'TRO', '2018-03-03', 'frugivore', 'soins', 'Perte de plumes en cours de traitement, en volière de repos.', 'animal.svg'),
+  (15, 'Manchot de Humboldt', 'Pingu', 'BAN', '2020-11-11', 'piscivore', 'visible', 'Plonge à chaque nourrissage de onze heures.', 'animal.svg'),
+  (16, 'Manchot de Humboldt', 'Flocon', 'BAN', '2026-01-18', 'piscivore', 'visible', 'Né cet hiver, premier manchot éclos au parc.', 'animal.svg'),
+  (17, 'Manchot de Humboldt', 'Olga', 'BAN', '2019-12-24', 'piscivore', 'visible', 'Mère de Flocon, très territoriale sur son nid.', 'animal.svg'),
+  (18, 'Phoque gris', 'Bruno', 'BAN', '2013-05-14', 'piscivore', 'visible', 'Deux cents kilos, adore le tunnel de verre.', 'animal.svg'),
+  (19, 'Phoque gris', 'Maya', 'BAN', '2023-06-30', 'piscivore', 'visible', 'Jeune femelle joueuse, nourrie à la main lors des animations.', 'animal.svg'),
+  (20, 'Chèvre naine', 'Biscotte', 'FER', '2021-02-14', 'herbivore', 'visible', 'Grimpe sur tout ce qui dépasse, mascotte des scolaires.', 'animal.svg'),
+  (21, 'Chèvre naine', 'Caramel', 'FER', '2026-03-02', 'herbivore', 'visible', 'Chevreau du printemps, tête toute noire.', 'animal.svg'),
+  (22, 'Âne du Poitou', 'Ulysse', 'FER', '2011-08-08', 'herbivore', 'visible', 'Longs poils bruns emmêlés, promène les enfants le mercredi.', 'animal.svg'),
+  (23, 'Poule de Marans', 'Groupe basse-cour', 'FER', '2024-04-04', 'omnivore', 'visible', 'Huit poules aux œufs chocolat, ramassés à quatorze heures.', 'animal.svg'),
+  (24, 'Lapin bélier', 'Moka', 'FER', '2023-09-09', 'herbivore', 'visible', 'Oreilles tombantes, atelier caresses le samedi.', 'animal.svg'),
+  (25, 'Vautour fauve', 'Attila', 'VOL', '2010-06-06', 'charognard', 'visible', 'Deux mètres soixante d\'envergure, nourri à quinze heures.', 'animal.svg'),
+  (26, 'Perroquet gris du Gabon', 'Coco', 'VOL', '2017-01-30', 'frugivore', 'visible', 'Imite la sonnerie du téléphone de l\'accueil.', 'animal.svg'),
+  (27, 'Chouette effraie', 'Luna', 'VOL', '2022-10-31', 'carnivore', 'visible', 'Visible surtout à la tombée du jour, vol totalement silencieux.', 'animal.svg'),
+  (28, 'Flamant rose', 'Groupe lagune', 'VOL', '2015-05-05', 'omnivore', 'visible', 'Vingt-deux flamants, couleur due aux crevettes de leur alimentation.', 'animal.svg'),
+  (29, 'Raie pastenague', 'Vega', 'AQU', '2018-02-02', 'carnivore', 'visible', 'Passe au-dessus du tunnel toutes les dix minutes.', 'animal.svg'),
+  (30, 'Hippocampe', 'Groupe récif', 'AQU', '2025-08-15', 'carnivore', 'visible', 'Vingt individus, les mâles portent les œufs.', 'animal.svg'),
+  (31, 'Poisson-clown', 'Groupe anémones', 'AQU', '2024-06-01', 'omnivore', 'visible', 'Trente poissons dans leurs anémones, bassin numéro 4.', 'animal.svg'),
+  (32, 'Piranha rouge', 'Groupe Amazone', 'AQU', '2021-07-21', 'carnivore', 'soins', 'Bassin en nettoyage, poissons transférés en réserve jusqu\'à la fin du mois.', 'animal.svg');
+
+INSERT INTO agent (mel, motdepasse, nom, prenom, role) VALUES
+  ('direction@zoo-valsorin.test', '$2y$10$qO6UlC2r60z.chq5oPNi1uKBai3em7G7tV9h/z5oDydfYqGs8x2T2', 'Vasseur', 'Hélène', 'administrateur'),
+  ('k.lefevre@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Lefèvre', 'Karim', 'technicien'),
+  ('m.dasilva@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Da Silva', 'Marta', 'technicien'),
+  ('a.benoit@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Benoît', 'Aurélie', 'agent'),
+  ('t.nguyen@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Nguyen', 'Thomas', 'agent'),
+  ('s.okafor@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Okafor', 'Sarah', 'agent'),
+  ('j.martin@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Martin', 'Julien', 'agent'),
+  ('l.haddad@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Haddad', 'Leïla', 'agent'),
+  ('p.girard@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Girard', 'Paul', 'agent'),
+  ('c.moreau@zoo-valsorin.test', '$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq', 'Moreau', 'Chloé', 'agent');
+
+INSERT INTO ticket (noticket, datecreation, secteur, sujet, description, priorite, statut, auteur, technicien, dateresolution) VALUES
+  (1, '2026-05-13 09:00:00', 'SAV', 'Fuite d\'eau dans l\'abreuvoir', 'L\'abreuvoir de l\'enclos déborde depuis ce matin, le sol est boueux sur deux mètres.', 'moyenne', 'resolu', 'a.benoit@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-05-14 06:00:00'),
+  (2, '2026-05-17 07:15:00', 'AQU', 'Sol glissant sur la passerelle', 'La passerelle en bois est glissante après la pluie, un visiteur a chuté sans gravité.', 'haute', 'resolu', 'l.haddad@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-05-20 20:15:00'),
+  (3, '2026-05-21 12:15:00', 'AQU', 'Panneau d\'information illisible', 'Le panneau décrivant l\'espèce est décoloré, le texte ne se lit plus.', 'basse', 'resolu', 's.okafor@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-05-23 14:15:00'),
+  (4, '2026-05-31 09:30:00', 'VOL', 'Distributeur de nourriture bloqué', 'Le distributeur automatique de granulés ne tourne plus, le bac est plein.', 'moyenne', 'resolu', 'a.benoit@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-05-31 21:30:00'),
+  (5, '2026-06-01 17:30:00', 'SAV', 'Éclairage de la serre en panne', 'Trois néons sur cinq sont éteints depuis hier soir, la zone est sombre pour les visiteurs.', 'moyenne', 'resolu', 's.okafor@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-06-03 00:30:00'),
+  (6, '2026-06-02 17:15:00', 'TRO', 'Point d\'eau visiteurs hors service', 'La fontaine à eau ne coule plus, le bouton est enfoncé en permanence.', 'basse', 'resolu', 's.okafor@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-06-03 06:15:00'),
+  (7, '2026-06-13 15:15:00', 'FER', 'Distributeur de nourriture bloqué', 'Le distributeur automatique de granulés ne tourne plus, le bac est plein.', 'moyenne', 'resolu', 'a.benoit@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-06-16 06:15:00'),
+  (8, '2026-06-14 14:30:00', 'BAN', 'Sol glissant sur la passerelle', 'La passerelle en bois est glissante après la pluie, un visiteur a chuté sans gravité.', 'haute', 'resolu', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-06-15 10:30:00'),
+  (9, '2026-06-16 13:30:00', 'VOL', 'Chauffage du bassin en défaut', 'La température affichée est de 15 degrés au lieu de 24, l\'alarme ne s\'est pas déclenchée.', 'haute', 'resolu', 'j.martin@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-06-18 02:30:00'),
+  (10, '2026-06-17 12:30:00', 'SAV', 'Odeur de gaz près du local technique', 'Odeur suspecte à l\'entrée du local technique, personne n\'a pu localiser la source.', 'haute', 'resolu', 'a.benoit@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-06-20 06:30:00'),
+  (11, '2026-06-23 10:30:00', 'FER', 'Panneau d\'information illisible', 'Le panneau décrivant l\'espèce est décoloré, le texte ne se lit plus.', 'basse', 'resolu', 'p.girard@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-06-24 22:30:00'),
+  (12, '2026-06-25 09:15:00', 'TRO', 'Odeur de gaz près du local technique', 'Odeur suspecte à l\'entrée du local technique, personne n\'a pu localiser la source.', 'haute', 'resolu', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-06-27 12:15:00'),
+  (13, '2026-06-25 12:15:00', 'FER', 'Grillage percé côté allée', 'Un trou de dix centimètres dans le grillage à hauteur d\'enfant, côté allée principale.', 'haute', 'resolu', 'l.haddad@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-06-28 20:15:00'),
+  (14, '2026-07-04 17:00:00', 'VOL', 'Borne tactile figée', 'La borne d\'information visiteurs affiche un écran figé depuis l\'ouverture.', 'basse', 'resolu', 't.nguyen@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-07-05 07:00:00'),
+  (15, '2026-07-08 07:15:00', 'VOL', 'Point d\'eau visiteurs hors service', 'La fontaine à eau ne coule plus, le bouton est enfoncé en permanence.', 'basse', 'resolu', 'p.girard@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-07-11 11:15:00'),
+  (16, '2026-07-10 12:00:00', 'AQU', 'Éclairage de la serre en panne', 'Trois néons sur cinq sont éteints depuis hier soir, la zone est sombre pour les visiteurs.', 'moyenne', 'resolu', 'p.girard@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-07-11 22:00:00'),
+  (17, '2026-07-11 18:30:00', 'SAV', 'Caméra de surveillance hors ligne', 'La caméra 3 ne remonte plus d\'image sur le poste de garde.', 'moyenne', 'resolu', 'l.haddad@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-07-13 08:30:00'),
+  (18, '2026-07-13 11:30:00', 'AQU', 'Poubelle débordante à l\'entrée du secteur', 'La poubelle n\'a pas été vidée depuis deux jours, les guêpes s\'accumulent.', 'basse', 'resolu', 'l.haddad@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-07-16 14:30:00'),
+  (19, '2026-07-15 08:00:00', 'TRO', 'Éclairage de la serre en panne', 'Trois néons sur cinq sont éteints depuis hier soir, la zone est sombre pour les visiteurs.', 'moyenne', 'resolu', 's.okafor@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-07-16 03:00:00'),
+  (20, '2026-07-17 16:30:00', 'TRO', 'Fuite d\'eau dans l\'abreuvoir', 'L\'abreuvoir de l\'enclos déborde depuis ce matin, le sol est boueux sur deux mètres.', 'moyenne', 'resolu', 't.nguyen@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-07-19 15:30:00'),
+  (21, '2026-07-21 15:45:00', 'FER', 'Banc cassé devant l\'enclos', 'Une latte du banc est fendue, risque d\'écharde pour les visiteurs.', 'basse', 'resolu', 'a.benoit@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-07-23 19:45:00'),
+  (22, '2026-08-03 16:15:00', 'TRO', 'Borne tactile figée', 'La borne d\'information visiteurs affiche un écran figé depuis l\'ouverture.', 'basse', 'ouvert', 'l.haddad@zoo-valsorin.test', NULL, NULL),
+  (23, '2026-08-04 07:45:00', 'BAN', 'Poubelle débordante à l\'entrée du secteur', 'La poubelle n\'a pas été vidée depuis deux jours, les guêpes s\'accumulent.', 'basse', 'resolu', 'a.benoit@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-08-07 14:45:00'),
+  (24, '2026-08-07 10:00:00', 'SAV', 'Caméra de surveillance hors ligne', 'La caméra 3 ne remonte plus d\'image sur le poste de garde.', 'moyenne', 'resolu', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-08-10 15:00:00'),
+  (25, '2026-08-10 13:45:00', 'FER', 'Pompe de filtration bruyante', 'La pompe du bassin fait un bruit de claquement toutes les dix secondes.', 'moyenne', 'resolu', 'j.martin@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-08-13 04:45:00'),
+  (26, '2026-08-12 18:15:00', 'TRO', 'Banc cassé devant l\'enclos', 'Une latte du banc est fendue, risque d\'écharde pour les visiteurs.', 'basse', 'resolu', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-08-13 20:15:00'),
+  (27, '2026-08-13 11:30:00', 'SAV', 'Caméra de surveillance hors ligne', 'La caméra 3 ne remonte plus d\'image sur le poste de garde.', 'moyenne', 'resolu', 'l.haddad@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-08-15 04:30:00'),
+  (28, '2026-08-19 17:30:00', 'FER', 'Thermomètre de la couveuse en erreur', 'L\'afficheur indique ERR, impossible de connaître la température réelle.', 'haute', 'resolu', 'j.martin@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-08-20 12:30:00'),
+  (29, '2026-08-21 17:00:00', 'BAN', 'Grillage percé côté allée', 'Un trou de dix centimètres dans le grillage à hauteur d\'enfant, côté allée principale.', 'haute', 'resolu', 'l.haddad@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', '2026-08-22 10:00:00'),
+  (30, '2026-08-26 15:45:00', 'SAV', 'Chauffage du bassin en défaut', 'La température affichée est de 15 degrés au lieu de 24, l\'alarme ne s\'est pas déclenchée.', 'haute', 'resolu', 'p.girard@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-08-27 01:45:00'),
+  (31, '2026-08-30 13:45:00', 'FER', 'Grillage percé côté allée', 'Un trou de dix centimètres dans le grillage à hauteur d\'enfant, côté allée principale.', 'haute', 'ouvert', 's.okafor@zoo-valsorin.test', NULL, NULL),
+  (32, '2026-08-31 09:15:00', 'FER', 'Thermomètre de la couveuse en erreur', 'L\'afficheur indique ERR, impossible de connaître la température réelle.', 'haute', 'ouvert', 'c.moreau@zoo-valsorin.test', NULL, NULL),
+  (33, '2026-08-31 09:45:00', 'SAV', 'Fuite d\'eau dans l\'abreuvoir', 'L\'abreuvoir de l\'enclos déborde depuis ce matin, le sol est boueux sur deux mètres.', 'moyenne', 'en_cours', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', NULL),
+  (34, '2026-09-01 12:15:00', 'FER', 'Panneau d\'information illisible', 'Le panneau décrivant l\'espèce est décoloré, le texte ne se lit plus.', 'basse', 'resolu', 'j.martin@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-09-04 06:15:00'),
+  (35, '2026-09-03 08:00:00', 'TRO', 'Pompe de filtration bruyante', 'La pompe du bassin fait un bruit de claquement toutes les dix secondes.', 'moyenne', 'resolu', 'c.moreau@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', '2026-09-04 03:00:00'),
+  (36, '2026-09-03 14:00:00', 'VOL', 'Banc cassé devant l\'enclos', 'Une latte du banc est fendue, risque d\'écharde pour les visiteurs.', 'basse', 'en_cours', 'a.benoit@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', NULL),
+  (37, '2026-09-04 08:00:00', 'VOL', 'Porte de sas qui ne ferme plus', 'Le loquet de la porte du sas de service ne s\'enclenche plus, la porte reste entrouverte.', 'haute', 'ouvert', 'j.martin@zoo-valsorin.test', NULL, NULL),
+  (38, '2026-09-04 12:15:00', 'FER', 'Porte de sas qui ne ferme plus', 'Le loquet de la porte du sas de service ne s\'enclenche plus, la porte reste entrouverte.', 'haute', 'en_cours', 't.nguyen@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', NULL),
+  (39, '2026-09-04 14:45:00', 'VOL', 'Pompe de filtration bruyante', 'La pompe du bassin fait un bruit de claquement toutes les dix secondes.', 'moyenne', 'ouvert', 'p.girard@zoo-valsorin.test', NULL, NULL),
+  (40, '2026-09-04 18:00:00', 'AQU', 'Distributeur de nourriture bloqué', 'Le distributeur automatique de granulés ne tourne plus, le bac est plein.', 'moyenne', 'en_cours', 's.okafor@zoo-valsorin.test', 'k.lefevre@zoo-valsorin.test', NULL),
+  (41, '2026-09-05 10:00:00', 'FER', 'Chauffage du bassin en défaut', 'La température affichée est de 15 degrés au lieu de 24, l\'alarme ne s\'est pas déclenchée.', 'haute', 'en_cours', 's.okafor@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', NULL),
+  (42, '2026-09-05 10:15:00', 'TRO', 'Borne tactile figée', 'La borne d\'information visiteurs affiche un écran figé depuis l\'ouverture.', 'basse', 'ouvert', 'p.girard@zoo-valsorin.test', NULL, NULL),
+  (43, '2026-09-05 12:00:00', 'SAV', 'Odeur de gaz près du local technique', 'Odeur suspecte à l\'entrée du local technique, personne n\'a pu localiser la source.', 'haute', 'en_cours', 't.nguyen@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', NULL),
+  (44, '2026-09-05 17:30:00', 'BAN', 'Porte de sas qui ne ferme plus', 'Le loquet de la porte du sas de service ne s\'enclenche plus, la porte reste entrouverte.', 'haute', 'en_cours', 'l.haddad@zoo-valsorin.test', 'm.dasilva@zoo-valsorin.test', NULL);

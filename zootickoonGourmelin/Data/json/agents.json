@@ -1,0 +1,74 @@
+{
+  "agents": [
+    {
+      "mel": "direction@zoo-valsorin.test",
+      "motdepasse": "$2y$10$qO6UlC2r60z.chq5oPNi1uKBai3em7G7tV9h/z5oDydfYqGs8x2T2",
+      "nom": "Vasseur",
+      "prenom": "Hélène",
+      "role": "administrateur"
+    },
+    {
+      "mel": "k.lefevre@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Lefèvre",
+      "prenom": "Karim",
+      "role": "technicien"
+    },
+    {
+      "mel": "m.dasilva@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Da Silva",
+      "prenom": "Marta",
+      "role": "technicien"
+    },
+    {
+      "mel": "a.benoit@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Benoît",
+      "prenom": "Aurélie",
+      "role": "agent"
+    },
+    {
+      "mel": "t.nguyen@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Nguyen",
+      "prenom": "Thomas",
+      "role": "agent"
+    },
+    {
+      "mel": "s.okafor@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Okafor",
+      "prenom": "Sarah",
+      "role": "agent"
+    },
+    {
+      "mel": "j.martin@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Martin",
+      "prenom": "Julien",
+      "role": "agent"
+    },
+    {
+      "mel": "l.haddad@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Haddad",
+      "prenom": "Leïla",
+      "role": "agent"
+    },
+    {
+      "mel": "p.girard@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Girard",
+      "prenom": "Paul",
+      "role": "agent"
+    },
+    {
+      "mel": "c.moreau@zoo-valsorin.test",
+      "motdepasse": "$2y$10$psXgFtfPJ1sj28DYTr3Hv..3RdNlkyE5aXRPD.LvTyhG4lOXvjDwq",
+      "nom": "Moreau",
+      "prenom": "Chloé",
+      "role": "agent"
+    }
+  ]
+}

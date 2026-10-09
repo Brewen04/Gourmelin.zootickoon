@@ -1,0 +1,50 @@
+[
+  {
+    "code": "SAV",
+    "nom": "Savane",
+    "description": "Grande plaine herbeuse de trois hectares, girafes, zèbres et autruches en cohabitation.",
+    "surface_m2": 30000,
+    "capacite_animaux": 34,
+    "image": "savane.svg"
+  },
+  {
+    "code": "TRO",
+    "nom": "Forêt tropicale",
+    "description": "Serre chaude et humide, canopée artificielle, singes, paresseux et oiseaux colorés.",
+    "surface_m2": 4200,
+    "capacite_animaux": 27,
+    "image": "tropicale.svg"
+  },
+  {
+    "code": "BAN",
+    "nom": "Banquise",
+    "description": "Bassin réfrigéré avec plage de glace, manchots et phoques.",
+    "surface_m2": 1800,
+    "capacite_animaux": 22,
+    "image": "banquise.svg"
+  },
+  {
+    "code": "FER",
+    "nom": "Ferme pédagogique",
+    "description": "Enclos ouverts au contact, chèvres, ânes et poules, ateliers pour les scolaires.",
+    "surface_m2": 2500,
+    "capacite_animaux": 40,
+    "image": "ferme.svg"
+  },
+  {
+    "code": "VOL",
+    "nom": "Grande volière",
+    "description": "Volière de vingt mètres de haut traversée par une passerelle, rapaces et perroquets.",
+    "surface_m2": 1500,
+    "capacite_animaux": 45,
+    "image": "voliere.svg"
+  },
+  {
+    "code": "AQU",
+    "nom": "Aquarium",
+    "description": "Douze bassins d'eau douce et d'eau de mer, tunnel sous le bassin des raies.",
+    "surface_m2": 900,
+    "capacite_animaux": 300,
+    "image": "aquarium.svg"
+  }
+]

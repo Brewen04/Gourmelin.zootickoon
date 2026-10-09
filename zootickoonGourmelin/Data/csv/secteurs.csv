@@ -1,0 +1,7 @@
+code;nom;description;surface_m2;capacite_animaux;image
+SAV;Savane;Grande plaine herbeuse de trois hectares, girafes, zèbres et autruches en cohabitation.;30000;34;savane.svg
+TRO;Forêt tropicale;Serre chaude et humide, canopée artificielle, singes, paresseux et oiseaux colorés.;4200;27;tropicale.svg
+BAN;Banquise;Bassin réfrigéré avec plage de glace, manchots et phoques.;1800;22;banquise.svg
+FER;Ferme pédagogique;Enclos ouverts au contact, chèvres, ânes et poules, ateliers pour les scolaires.;2500;40;ferme.svg
+VOL;Grande volière;Volière de vingt mètres de haut traversée par une passerelle, rapaces et perroquets.;1500;45;voliere.svg
+AQU;Aquarium;Douze bassins d'eau douce et d'eau de mer, tunnel sous le bassin des raies.;900;300;aquarium.svg
