@@ -14,11 +14,12 @@
 		<li><a href="signaler.html">Signaler un incident</a></li>
 		<li><a href="index.html#horaires">Horaires</a></li>
 	</ul>
-	<form action="traiter_signalement.php" method="post">
+	<form action="traiter_ticket.php" method="post">
 		<fieldset>
 			<Legend>Déclaration d'incident</Legend>
 			<label for ="secteur">Secteur concerné</label>
 			<select id="secteur" name="secteur" required>
+				<option value="">Choisissez un secteur</option>
 				<option value="SAV">Savane</option>
 				<option value="FOR">Forêt tropicale</option>
 				<option value="BAN">Banquise</option>
@@ -32,8 +33,20 @@
 			<textarea id="description" name="description" maxlength="255" required></textarea>
 				<fieldset>
 					<legend>Priorité</legend>
-					
+					<input type="checkbox" id="u1" name="priorite" value="basse">
+						<label for="u1">Basse</label>
+					<input type="checkbox" id="u2" name="priorite" value="moyenne">
+						<label for="u2">Moyenne</label>
+					<input type="checkbox" id="u3" name="priorite" value="haute">
+						<label for="u3">Haute</label>
 				</fieldset>
+				<label for="mel">Votre adresse e-mail</label>
+				<input id="mel" name="mel" type="email" required>
+				<button> Envoyer</button>
 		</fieldset>
+		</form>
+<p> Parc animalier de Val-Sorim -- route des Etangs, Val Sorim</p>
+
 </body>
+
 </html>
