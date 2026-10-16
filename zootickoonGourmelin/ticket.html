@@ -14,6 +14,22 @@
 		<li><a href="signaler.html">Signaler un incident</a></li>
 		<li><a href="index.html#horaires">Horaires</a></li>
 	</ul>
-	
+	<form action="traiter_signalement.php" method="post">
+		<fieldset>
+			<Legend>Déclaration d'incident</Legend>
+			<label for ="secteur">Secteur concerné</label>
+			<select id="secteur" name="secteur" required>
+				<option value="SAV">Savane</option>
+				<option value="FOR">Forêt tropicale</option>
+				<option value="BAN">Banquise</option>
+				<option value="FER">Ferme pédagogique</option>
+				<option value="VOL">Grande volière</option>
+				<option value="AQUA">Aquarium</option>
+			</select>
+			<label for="sujet">Sujet</label>
+			<input id="sujet" name="sujet" type="text" maxlength="120" required>
+			<label for="detail">Description</label>
+			<textarea id="detail" name="detail" rows="5" maxlength="255" required></textarea>
+		</fieldset>
 </body>
 </html>
